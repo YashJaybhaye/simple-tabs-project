@@ -1,0 +1,43 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation bar container */
+  .topnav {
+    background-color: #333; /* Dark background */
+    overflow: hidden; /* Clear floats */
+    display: flex; /* Flexbox for alignment */
+    padding: 0 10px;
+  }
+  
+  /* Navigation links */
+  .topnav a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 14px 20px; /* Spacing inside links */
+    display: block; /* Make links fill the height of the navbar */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+  }
+  
+  /* Active link */
+  .topnav a.active {
+    background-color: #04AA6D; /* Highlight for active tab */
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Hover effect */
+  .topnav a:hover {
+    background-color: #ddd; /* Light gray background */
+    color: black; /* Black text */
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    .topnav {
+      flex-direction: column; /* Stack links vertically on small screens */
+    }
+  }
+  
